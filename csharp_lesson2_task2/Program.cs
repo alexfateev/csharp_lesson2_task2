@@ -20,22 +20,8 @@ try
 
     Console.WriteLine("Укажите номер пользователя которого хотите найти: ");
     int i = int.Parse(Console.ReadLine());
+    Console.WriteLine($"Пользователь {i} - Имя: {name[i]} Возраст: {age[i]}");  
 
-    switch(i)
-    {
-        case 1: 
-            Console.WriteLine($"Пользователь 1 - Имя: {name[0]} Возраст: {age[0]}");
-            break;
-        case 2:
-            Console.WriteLine($"Пользователь 2 - Имя: {name[1]} Возраст: {age[1]}");
-            break;
-        case 3:
-            Console.WriteLine($"Пользователь 3 - Имя: {name[2]} Возраст: {age[2]}");
-            break;
-        default:
-            Console.WriteLine("Данный пользователь не найден");
-            break;
-    }
 
 } catch (Exception ex)
 {
